@@ -4,6 +4,8 @@
 body {
 	font-family: 'Lato', sans-serif;
 	font-size: 1em;
+	background: linear-gradient(to top right, #ede1ff, #e9e2f7, #fbeeff);
+	/* background: linear-gradient(to top right, #FBF9FD, #F1ECF8); */
 	
 	/* background: linear-gradient(to bottom left, #A6EEE4, #C6E4E1, #F1C9A3, #F6AEC0, #FFC9D9); */ 
 	/* to top right, #973e95, #ad66a9, #cf8bbf, #d8b1d4 */
@@ -67,14 +69,6 @@ body {
 	height: auto; 
 	border: 0px solid black;
 	display: inline-block;
-}
-.billede-beskrivelse {
-	text-align: center;
-	font-size: 1.3em;
-}
-.opgave-beskrivelse {
-	text-align: center; 
-	font-size: 1.2em;
 }
 
 /* Style til projekt undersider */
