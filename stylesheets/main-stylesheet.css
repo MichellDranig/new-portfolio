@@ -4,13 +4,24 @@
 body {
 	font-family: 'Lato', sans-serif;
 	font-size: 1em;
-	background: linear-gradient(to top right, #ede1ff, #e9e2f7, #fbeeff);
+	margin: 0; 
+	padding: 0; 
+	border: 0;
+}
+	/* background: linear-gradient(to top right, #ede1ff, #e9e2f7, #fbeeff); */ 
 	/* background: linear-gradient(to top right, #FBF9FD, #F1ECF8); */
 	
 	/* background: linear-gradient(to bottom left, #A6EEE4, #C6E4E1, #F1C9A3, #F6AEC0, #FFC9D9); */ 
 	/* to top right, #973e95, #ad66a9, #cf8bbf, #d8b1d4 */
 	/* to bottom left, #92ebdf, #afdbd5, #eba766, #f494ad, #ff7ea3 */
 	/* to bottom left, #3eb489, #69a488, #849387, #998086, #a96c85, #b75384, #c32f83 */
+
+header {
+	background-color: #715ab7;
+}
+
+p {
+	line-height: 1.8;
 }
 
 /* Navigation */
@@ -28,13 +39,19 @@ body {
 }
 .top-navigation a {
 	text-decoration: none;
-	color: black;
 	width: 20%;
 	font-size: 1.3em;
 	margin: 2%;
+	color: white;
 }
 .menutekst {
-	font-weight: 600;
+	font-weight: 400;
+}
+.menu-projekter {
+	font-weight: 700;
+}
+.top-navigation .menu-projekter {
+	color: #ffbf00;
 }
 
 /* Style til homepage */
@@ -48,14 +65,13 @@ body {
 }
 .projekt-billede img {
 	display: inline-block;
-	margin: 2%;
 	width: 35%;
 	height: auto;
 }
 #overskrift-beskrivelse {
-	font-size: 1.5em;
+	font-size: 1.3em;
 }
-#beskrivelse {
+.beskrivelse {
 	font-size: 1.2em;
 }
 
@@ -63,6 +79,7 @@ body {
 .projekter {
 	border: 0px solid black;
 	margin: 7% 0;
+	position: relative;
 }
 .projekter img {
 	width: 100%;
@@ -70,15 +87,106 @@ body {
 	border: 0px solid black;
 	display: inline-block;
 }
-
+.image {
+	width: 100%; 
+	height: auto;
+}
+.overlay {
+	position: absolute;
+	bottom: 0;
+  	left: 0;
+  	right: 0;
+  	overflow: hidden;
+  	width: 100%;
+  	height: 100%;
+  	transform: scale(0);
+  	transition: .3s ease;
+}
+.projekter:hover .overlay {
+	transform: scale(1);
+	cursor: pointer;
+}
+.beskrivelse {
+	text-align: center; 
+	font-size: 1.2em;
+}
 /* Style til projekt undersider */
+/* Style til sweetbot underside */
+.sweet-img {
+	border: 0px solid black;
+	text-align: center;
+	margin-top: 2%;
+	margin-right: 4%;
+	width: 98%;
+}
+.sweet-img img {
+	border: 1px solid black;
+	display: inline-block;
+	width: 100%;
+	height: auto;
+}
+.hotbot-billede {
+	width: 80%;
+	height: auto;
+	display: inline-block;
+}
+.sweet-right img {
+	padding-left: 20%;
+	padding-top: 6%;
+}
+.sweet-billeder {
+	width: 30%;
+	height: auto;
+	display: inline-block;
+}
+.new-sweet {
+	width: 100%;
+	height: auto; 
+	display: inline-block;
+}
+/* Style til app underside */
+.first-img {
+	border: 0px solid black;
+	text-align: center;
+	margin-top: 2%;
+	margin-right: 4%;
+	width: 98%;
+}
+.first-img img {
+	border: 0px solid black;
+	display: inline-block;
+	width: 100%;
+	height: auto;
+}
+.app-billeder {
+	width: 50%; 
+	height: auto;
+	display: inline-block;
+	border: 0px solid black;
+}
+.container {
+	margin-top: 4%;
+	border: 0px solid black;
+}
+.app-right img {
+	padding-left: 50%;
+}
+.medvind {
+	margin-top: 6%;
+	border: 0px solid black;
+}
 
 /* Style til udvikling */
+.top-navigation .menu-udvikling {
+	color: #ffbf00;
+}
 
 /* Style til om mig */
+.top-navigation .menu-om {
+	color: #ffbf00;
+}
 .om-mig {
 	border: 0px solid black; 
-	height: 650px;
 	margin: 0 3%;
 }
 .om-mig img {
@@ -92,3 +200,6 @@ body {
 }
 
 /* Style til kontakt */
+.top-navigation .menu-kontakt {
+	color: #ffbf00;
+}
