@@ -9,10 +9,12 @@
 <link href="stylesheets/simplegrid.css" rel="stylesheet" type="text/css">
 <!-- eget stylesheet til desktop -->
 <link href="stylesheets/main-stylesheet.css" rel="stylesheet" type="text/css">
+<!-- eget stylesheet til mobile -->
+<!--<link href="stylesheets/mobile-stylesheet.css" rel="stylesheet" type="text/css" media="screen and (max-width: 800px)">-->
 </head>
 
 <body>
-<!-- Navigation og logo -->
+<!-- Navigation og logo til desktop -->
 <header>
 	<a href="#"><img class="logo" src="images/mainlogo-test.png" width="483" height="483" alt=""/></a>
 	<nav class="top-navigation">
@@ -22,6 +24,64 @@
 		<a class="menutekst" href="pages/kontakt.html">Kontakt</a>
 	</nav>
 </header>
+
+<!-- Navigation og logo til mindre skærme -->
+<header class="mobile">
+	<a href="#"><img class="logo" src="images/mainlogo-test.png" width="483" height="483" alt=""/></a>
+	<div class="burger-menu" onclick="myFunction(this)">
+  		<div class="bar1"></div>
+  		<div class="bar2"></div>
+  		<div class="bar3"></div>
+	</div>
+	<div class="top-nav">
+		<div id="myLinks">
+			<a href="pages/projekter.html">Projekter</a>
+			<a href="pages/learning.html">Udvikling</a>
+			<a href="pages/om-mig.html">Om mig</a>
+			<a href="pages/kontakt.html">Kontakt</a>
+		</div>
+	</div>
+</header>
+
+<script>
+//	function myFunction(x) {
+//  	x.classList.toggle("change");
+//	}
+	function myFunction() {
+  	var x = document.getElementById("myLinks");
+  	
+	if (x.style.display === "block") {
+    x.style.display = "none";
+  	} 
+	else {
+    x.style.display = "block";
+  	}
+}
+</script>
+
+<!-- 
+	<div class="topnav">
+  		<a href="#home" class="active">Logo</a>
+  			<div id="myLinks">
+    			<a href="#news">News</a>
+    			<a href="#contact">Contact</a>
+    			<a href="#about">About</a>
+  			</div>
+  		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    	<i class="fa fa-bars"></i>
+  		</a>
+	</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>--!>
 	
 <!-- Tekst og billede -->
 <div class="text">

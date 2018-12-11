@@ -23,18 +23,34 @@
 	</nav>
 </header>
 
+<!-- Navigation og logo til mindre skærme -->
+<header class="mobile">
+	<a href="#"><img class="logo" src="../images/mainlogo-test.png" width="483" height="483" alt=""/></a>
+	<div class="burger-menu" onclick="myFunction(this)">
+  		<div class="bar1"></div>
+  		<div class="bar2"></div>
+  		<div class="bar3"></div>
+	</div>
+</header>
+
+<script>
+	function myFunction(x) {
+  	x.classList.toggle("change");
+	}
+</script>
+
 <!-- Billede og tekst -->
 <div class="grid grid-pad">
-	<div class="col-1-2">
-		<div class="om-mig"> 
-    		<img src="../images/mig.png" alt=""/>
-		</div>
-	</div>
 	<div class="col-1-2">
 		<div class="om-mig">
 			<h2>Om mig</h2>
 			<p class="tekst-om-mig">Mit navn er Michell Aagaard Dranig, jeg er 21 år og bor i Albertslund. Lige nu studerer jeg på multimediedesigner uddannelsen på CPH Business Academy i Lyngby. Det at designe er noget jeg altid har været interesseret i, men da jeg ikke er særlig god til at tegne, har jeg ikke rigtig opsøgt nogen muligheder for at få en uddannelse indenfor design, men det kan jeg nu! Jeg elsker at lave rigtig mange forskellige aktiviteter og kan aldrig sidde stille med det samme i for lang tid ad gangen, hvis arbejdet er monotont.</p>
 			<p class="tekst-om-mig"> De to største af mine yndlingsbeskæftigelser er at læse og, som noget nyt, at tage billeder og redigere dem. Jeg synes det er fedt at sidde begravet i noget arbejde, hvor man hele tiden kan finde på nye måder at ændre et billede på. På den anden side er det også rart nogle gange bare at kunne koble tankerne fra med en god bog. Helst fantasy :D</p>
+		</div>
+	</div>
+	<div class="col-1-2">
+		<div class="om-mig"> 
+    		<img src="../images/mig.png" alt=""/>
 		</div>
 	</div>
 </div>

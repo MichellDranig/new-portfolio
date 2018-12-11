@@ -8,23 +8,20 @@ body {
 	padding: 0; 
 	border: 0;
 }
-	/* background: linear-gradient(to top right, #ede1ff, #e9e2f7, #fbeeff); */ 
-	/* background: linear-gradient(to top right, #FBF9FD, #F1ECF8); */
-	
-	/* background: linear-gradient(to bottom left, #A6EEE4, #C6E4E1, #F1C9A3, #F6AEC0, #FFC9D9); */ 
-	/* to top right, #973e95, #ad66a9, #cf8bbf, #d8b1d4 */
-	/* to bottom left, #92ebdf, #afdbd5, #eba766, #f494ad, #ff7ea3 */
-	/* to bottom left, #3eb489, #69a488, #849387, #998086, #a96c85, #b75384, #c32f83 */
-
 header {
 	background-color: #715ab7;
 }
-
 p {
 	line-height: 1.8;
 }
 
 /* Navigation */
+.mobile {
+	display: none;
+}
+.mobile {
+	display: none;
+}
 .logo {
 	display: inline-block;
 	width: 100px;
@@ -33,9 +30,10 @@ p {
 }
 .top-navigation {
 	float: right;
-	width: 30%;
+	width: 50%;
 	display: inline-block;
-	padding: 4% 0% 4% 4%;
+	padding: 4% 3%;
+	text-align: right;
 }
 .top-navigation a {
 	text-decoration: none;
@@ -61,7 +59,7 @@ p {
 }
 .projekt-billede {
 	text-align: center;
-	height: 700px;
+	height: 600px;
 }
 .projekt-billede img {
 	display: inline-block;
@@ -177,11 +175,17 @@ p {
 }
 
 /* Style til udvikling */
+.menu-udvikling {
+	font-weight: 700;
+}
 .top-navigation .menu-udvikling {
 	color: #ffbf00;
 }
 
 /* Style til om mig */
+.menu-om {
+	font-weight: 700;
+}
 .top-navigation .menu-om {
 	color: #ffbf00;
 }
@@ -200,6 +204,66 @@ p {
 }
 
 /* Style til kontakt */
+.menu-konakt {
+	font-weight: 700;
+}
 .top-navigation .menu-kontakt {
 	color: #ffbf00;
+}
+
+/* Layout til mobil */
+@media screen and (max-width: 800px) {
+	header {
+		display: none;
+	}
+	
+	.mobile {
+		display: block;
+	}
+	.burger-menu {
+  		display: inline-block;
+  		cursor: pointer;
+		float: right;
+		padding-top: 40px;
+		padding-right: 10px;
+	}
+	.top-nav #myLinks{
+		display: none;
+	}
+	.top-nav a {
+		text-decoration: none;
+		font-size: 1.3em;
+		margin: 3%;
+		color: white;
+		display: block;
+	}
+	
+	.bar1, .bar2, .bar3 {
+  		width: 35px;
+  		height: 5px;
+  		background-color: white;
+  		margin: 6px 0;
+  		transition: 0.4s;
+	}
+
+	.change .bar1 {
+  		-webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  		transform: rotate(-45deg) translate(-9px, 6px);
+	}
+
+	.change .bar2 {
+		opacity: 0;
+	}
+
+	.change .bar3 {
+  		-webkit-transform: rotate(45deg) translate(-8px, -8px);
+  		transform: rotate(45deg) translate(-8px, -8px);
+	}
+	
+	/* Home page */
+	.projekt-billede img {
+		display: inline-block;
+		width: 70%;
+		height: auto;
+	}
 }

@@ -1,0 +1,102 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-size: 1em;
+	margin: 0; 
+	padding: 0; 
+	border: 0;
+}
+/* Skjule desktop navigation */
+header {
+	display: none;
+}
+/* Style til logo burgermenu */
+.mobile {
+	background-color: #715ab7;
+	display: block;
+}
+.logo {
+	display: inline-block;
+	width: 100px;
+	height: auto;
+	padding: 1%;
+}
+.burger-menu {
+  	display: inline-block;
+  	cursor: pointer;
+	float: right;
+	padding: 9%;
+}
+.bar1, .bar2, .bar3 {
+  	width: 35px;
+  	height: 5px;
+  	background-color: white;
+  	margin: 6px 0;
+  	transition: 0.4s;
+	
+}
+
+/* Til 'animation' når man klikker på ikonet*/
+.change .bar1 {
+  	-webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  	transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+.change .bar2 {
+  	opacity: 0;
+}
+.change .bar3 {
+  	-webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+	transform: rotate(45deg) translate(-8px, -8px) ;
+}
+/* Style til home page */
+.text {
+	text-align: center;
+	width: 100%;
+}
+.projekt-billede {
+	text-align: center;
+	height: 700px;
+}
+.projekt-billede img {
+	display: inline-block;
+	width: 70%;
+	height: auto;
+}
+
+/* Style til projekter */
+.projekter {
+	border: 0px solid black;
+	margin: 7% 0;
+	position: relative;
+}
+.projekter img {
+	width: 100%;
+	height: auto; 
+	border: 0px solid black;
+	display: inline-block;
+}
+.image {
+	width: 100%; 
+	height: auto;
+}
+.overlay {
+	position: absolute;
+	bottom: 0;
+  	left: 0;
+  	right: 0;
+  	overflow: hidden;
+  	width: 100%;
+  	height: 100%;
+  	transform: scale(0);
+  	transition: .3s ease;
+}
+.projekter:hover .overlay {
+	transform: scale(1);
+	cursor: pointer;
+}
+.beskrivelse {
+	text-align: center; 
+	font-size: 1.2em;
+}
