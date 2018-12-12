@@ -242,4 +242,7 @@ p {
 	}
 	
 	/* Projekt side */
+	.projekter:hover .overlay {
+	display: none;
+}
 }
