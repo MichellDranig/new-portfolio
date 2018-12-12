@@ -245,4 +245,33 @@ p {
 	.overlay img {
 		display: none;
 	}
+	
+	
+	
+	/* Sweetbot side */
+	.sweet-right {
+		text-align: center;
+	}
+	.sweet-right img {
+		padding-left: 0%;
+		padding-top: 0%;
+	}
+	.sweet-skitser {
+		text-align: center;
+	}
+	.new-sweet {
+		text-align: center;
+	}
+	
+	/* App side */
+	.app-right {
+		text-align: center;
+	}
+	.app-right img {
+		padding-left: 0%;
+		paddint-top: 0%;
+	}
+	.app-skitser {
+		text-align: center;
+	}
 }
