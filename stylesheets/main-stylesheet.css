@@ -78,7 +78,7 @@ p {
 }
 .projekter img {
 	width: 100%;
-	height: auto; 
+	height: auto;
 	border: 0px solid black;
 	display: inline-block;
 }
@@ -237,17 +237,14 @@ p {
 	/* Home page */
 	.projekt-billede img {
 		display: inline-block;
-		width: 70%;
+		width: 80%;
 		height: auto;
 	}
 	
 	/* Projekt side */
-	.overlay img {
-		display: none;
+	.overlay {
+		transform: scale(1);
 	}
-	
-	
-	
 	/* Sweetbot side */
 	.sweet-right {
 		text-align: center;
