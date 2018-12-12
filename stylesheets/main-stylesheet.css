@@ -245,6 +245,9 @@ p {
 	.overlay {
 		transform: scale(1);
 	}
+	.hide-m {
+		opacity: 0;
+	}
 	/* Sweetbot side */
 	.sweet-right {
 		text-align: center;
