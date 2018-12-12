@@ -7,14 +7,12 @@
 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 <!-- Kildehenvisning til ham der har lavet simplegrid -->
 <link href="../stylesheets/simplegrid.css" rel="stylesheet" type="text/css">
-<!-- eget stylesheet til desktop -->
+<!-- eget stylesheet -->
 <link href="../stylesheets/main-stylesheet.css" rel="stylesheet" type="text/css">
-<!-- eget stylesheet til mobile -->
-<!--<link href="../stylesheets/mobile-stylesheet.css" rel="stylesheet" type="text/css" media="screen and (max-width: 800px)">-->
 </head>
 
 <body>
-<!-- Navigation og logo -->
+<!-- Navigation og logo til desktop -->
 <header>
 	<a href="../index.html"><img class ="logo" src="../images/mainlogo-test.png" width="483" height="483" alt=""/></a>
 	<nav class="top-navigation">
@@ -27,18 +25,33 @@
 
 <!-- Navigation og logo til mindre skærme -->
 <header class="mobile">
-	<a href="#"><img class="logo" src="../images/mainlogo-test.png" alt=""/></a>
+	<a href="../index.html"><img class="logo" src="../images/mainlogo-test.png" width="483" height="483" alt=""/></a>
 	<div class="burger-menu" onclick="myFunction(this)">
   		<div class="bar1"></div>
   		<div class="bar2"></div>
   		<div class="bar3"></div>
 	</div>
+	<div class="top-nav">
+		<div id="myLinks">
+			<a href="#">Projekter</a>
+			<a href="learning.html">Udvikling</a>
+			<a href="om-mig.html">Om mig</a>
+			<a href="kontakt.html">Kontakt</a>
+		</div>
+	</div>
 </header>
 
 <script>
-	function myFunction(x) {
-  	x.classList.toggle("change");
-	}
+	function myFunction() {
+  	var x = document.getElementById("myLinks");
+  	
+	if (x.style.display === "block") {
+    x.style.display = "none";
+  	} 
+	else {
+    x.style.display = "block";
+  	}
+}
 </script>
 
 <!-- Indhold -->
@@ -63,7 +76,7 @@
 	</div>
 	<div class="col-1-4">
 		<div class="projekter">
-	    	<img src="../images/sweetbot-shadow.png" width="828" height="828" alt=""/>
+	    	<img class="image" src="../images/sweetbot-shadow.png" width="828" height="828" alt=""/>
 			<div class="overlay">
 				<div class="billede">
 			    	<a href="sweetbot.html"><img src="../images/sweetbot-overlay.png" width="830" height="828" alt=""/></a>
@@ -74,7 +87,7 @@
 	</div>
 	<div class="col-1-4">
 		<div class="projekter">
-   	    	<img src="../images/app-shadow.png" width="828" height="828" alt=""/>
+   	    	<img class="image" src="../images/app-shadow.png" width="828" height="828" alt=""/>
 			<div class="overlay">
 				<div class="billede">
    	    	    	<a href="app.html"><img src="../images/vejrapp-overlay.png" width="830" height="830" alt=""/></a>

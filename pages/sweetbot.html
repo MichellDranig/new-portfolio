@@ -7,7 +7,7 @@
 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 <!-- Kildehenvisning til ham der har lavet simplegrid -->
 <link href="../stylesheets/simplegrid.css" rel="stylesheet" type="text/css">
-<!-- eget stylesheet til desktop -->
+<!-- eget stylesheet -->
 <link href="../stylesheets/main-stylesheet.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -25,18 +25,33 @@
 
 <!-- Navigation og logo til mindre skærme -->
 <header class="mobile">
-	<a href="#"><img class="logo" src="../images/mainlogo-test.png" width="483" height="483" alt=""/></a>
+	<a href="../index.html"><img class="logo" src="../images/mainlogo-test.png" width="483" height="483" alt=""/></a>
 	<div class="burger-menu" onclick="myFunction(this)">
   		<div class="bar1"></div>
   		<div class="bar2"></div>
   		<div class="bar3"></div>
 	</div>
+	<div class="top-nav">
+		<div id="myLinks">
+			<a href="projekter.html">Projekter</a>
+			<a href="learning.html">Udvikling</a>
+			<a href="om-mig.html">Om mig</a>
+			<a href="kontakt.html">Kontakt</a>
+		</div>
+	</div>
 </header>
 
 <script>
-	function myFunction(x) {
-  	x.classList.toggle("change");
-	}
+	function myFunction() {
+  	var x = document.getElementById("myLinks");
+  	
+	if (x.style.display === "block") {
+    x.style.display = "none";
+  	} 
+	else {
+    x.style.display = "block";
+  	}
+}
 </script>
 
 <!-- Indhold -->
@@ -60,8 +75,8 @@
 			<h4>Design af webside og webshop</h4>
 			<p>Dette var vores første gruppeprojekt på 1. semester på multimediedesigner uddannelsen. Vi fik til opgave at udvikle en webside til det fiktive webbureau ”Sweetbot”. Vi skulle lave en dansk udgave, som også fungerer til mobile enheder og denne skulle laves ud fra den styleguide vi fik udleveret. Derudover skulle der også laves logo samt ikoner til deres nye e-commerce side ”HotBot”.</p>
 			<ul>
-				<li>For at se hele projektbeskrivelsen klik her <!-- link på klik her --></li>
-				<li>For at se styleguiden klik her <!-- link på klik her --></li>
+				<li>For at se hele projektbeskrivelsen <a href="../rapporter/sweet-projekt-beskrivelse.pdf">klik her</a></li>
+				<li>For at se styleguiden <a href="../rapporter/sweetbot-style-guide.pdf">klik her</a></li>
 			</ul>
 		</div>
 		<div class="medvind">
@@ -101,7 +116,7 @@
 			<ul>
 				<li>Link til online versionen: <!-- INDSÆT LINK TIL SWEETBOT --></li>
 				<li>Link til redesignet i Adobe Xd: <!-- INDSÆT XD LINK --></li>
-				<li>For at læse hele rapporten klik her <!-- HER ER LINK INDSÆT RAPPORT LINK --></li>
+				<li>For at læse hele rapporten <a href="../rapporter/mul-a-sweetbot.pdf">klik her</a></li>
 			</ul>
 		</div>
 	</div>
