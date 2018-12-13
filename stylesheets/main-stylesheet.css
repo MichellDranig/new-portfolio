@@ -70,6 +70,9 @@ p {
 }*/
 
 /* NEW STYLE FOR NEW HOMEPAGE */
+#projekt-img-mobil {
+	display: none;
+}
 #projekt-img {
 	text-align: center;
 	position: relative;
@@ -263,11 +266,26 @@ p {
 	}
 	
 	/* Home page */
-	.projekt-billede img {
+/*	.projekt-billede img {
 		display: inline-block;
 		width: 80%;
 		height: auto;
+	}*/
+	#projekt-img {
+		display: none;
 	}
+	#projekt-img-mobil {
+		text-align: center;
+		position: relative;
+		margin: 3%;
+		display: block;
+	}
+	#projekt-img-mobil img {
+		display: inline-block;
+		width: 100%;
+		height: auto;
+	}
+
 	
 	/* Projekt side */
 	.overlay {
