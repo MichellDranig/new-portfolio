@@ -53,20 +53,32 @@ p {
 }
 
 /* Style til homepage */
-.text {
+/*.text {
 	text-align: center;
 	width: 100%;
-}
-.projekt-billede {
+}*/
+/*.projekt-billede {
 	text-align: center;
 }
 .projekt-billede img {
 	display: inline-block;
 	width: 100%;
 	height: auto;
-}
-#overskrift-beskrivelse {
+}*/
+/*#overskrift-beskrivelse {
 	font-size: 1.3em;
+}*/
+
+/* NEW STYLE FOR NEW HOMEPAGE */
+#projekt-img {
+	text-align: center;
+	position: relative;
+	margin: 3%;
+}
+#projekt-img img {
+	display: inline-block;
+	width: 100%;
+	height: auto;
 }
 
 /* Style til projekter */
