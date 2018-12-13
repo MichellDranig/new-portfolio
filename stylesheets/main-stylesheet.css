@@ -177,7 +177,7 @@ p {
 	color: #ffbf00;
 }
 
-/* Style til om mig */
+/* Style til Kontakt/om */
 .menu-om {
 	font-weight: 700;
 }
@@ -196,7 +196,6 @@ p {
 	width: 80%;
 	height: auto;
 }
-
 .kontakt-div {
 	text-align: center;
 }
@@ -231,6 +230,7 @@ p {
 	}
 	.top-nav #myLinks{
 		display: none;
+		padding: 1%;
 	}
 	.top-nav a {
 		text-decoration: none;
@@ -290,5 +290,21 @@ p {
 	}
 	.app-skitser {
 		text-align: center;
+	}
+	
+	/* Kontakt/Om side */
+	.om-mig img {
+		display: inline-block;
+		width: 75%;
+		height: auto;
+	}
+	/* ændre størrelse på kontakt ikoner !!!!!! */
+	.contact-icons {
+		border: 0px solid black;
+		height: auto;
+	}
+	.contact-icons img {
+		width: 25%;
+		height: auto;
 	}
 }
