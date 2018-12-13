@@ -59,11 +59,10 @@ p {
 }
 .projekt-billede {
 	text-align: center;
-	height: 600px;
 }
 .projekt-billede img {
 	display: inline-block;
-	width: 35%;
+	width: 100%;
 	height: auto;
 }
 #overskrift-beskrivelse {
