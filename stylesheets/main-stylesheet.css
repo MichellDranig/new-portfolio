@@ -19,9 +19,6 @@ p {
 .mobile {
 	display: none;
 }
-.mobile {
-	display: none;
-}
 .logo {
 	display: inline-block;
 	width: 100px;
@@ -32,7 +29,7 @@ p {
 	float: right;
 	width: 50%;
 	display: inline-block;
-	padding: 4% 3%;
+	padding: 55px 0%;
 	text-align: right;
 }
 .top-navigation a {
@@ -41,6 +38,9 @@ p {
 	font-size: 1.3em;
 	margin: 2%;
 	color: white;
+}
+.top-navigation a:hover {
+	 color: #ffbf00;
 }
 .menutekst {
 	font-weight: 400;
@@ -72,14 +72,12 @@ p {
 
 /* Style til projekter */
 .projekter {
-	border: 0px solid black;
 	margin: 7% 0;
 	position: relative;
 }
 .projekter img {
 	width: 100%;
 	height: auto;
-	border: 0px solid black;
 	display: inline-block;
 }
 .overlay {
@@ -101,10 +99,18 @@ p {
 	text-align: center; 
 	font-size: 1.2em;
 }
+
 /* Style til projekt undersider */
+.projekt-beskrivelse {
+	color: #ffbf00;
+	font-weight: 700;
+}
+.andre-projekter {
+	font-weight: 600;
+}
+
 /* Style til sweetbot underside */
 .sweet-img {
-	border: 0px solid black;
 	text-align: center;
 	margin-top: 2%;
 	margin-right: 4%;
@@ -135,16 +141,15 @@ p {
 	height: auto; 
 	display: inline-block;
 }
+
 /* Style til app underside */
 .first-img {
-	border: 0px solid black;
 	text-align: center;
 	margin-top: 2%;
 	margin-right: 4%;
 	width: 98%;
 }
 .first-img img {
-	border: 0px solid black;
 	display: inline-block;
 	width: 100%;
 	height: auto;
@@ -153,18 +158,15 @@ p {
 	width: 50%; 
 	height: auto;
 	display: inline-block;
-	border: 0px solid black;
 }
 .container {
 	margin-top: 4%;
-	border: 0px solid black;
 }
 .app-right img {
 	padding-left: 50%;
 }
 .medvind {
 	margin-top: 6%;
-	border: 0px solid black;
 }
 
 /* Style til udvikling */
@@ -183,21 +185,33 @@ p {
 	color: #ffbf00;
 }
 .om-mig {
-	border: 0px solid black; 
 	margin: 0 3%;
 }
+.me-img {
+	text-align: center;
+	padding-top: 33px;
+}
 .om-mig img {
-	border: 0px solid black;
 	display: inline-block;
-	width: 100%;
+	width: 80%;
+	height: auto;
 }
 
-/* Style til kontakt */
-.menu-kontakt {
-	font-weight: 700;
+.kontakt-div {
+	text-align: center;
 }
-.top-navigation .menu-kontakt {
-	color: #ffbf00;
+#kontakt-h1 {
+	margin-top: 6%;
+}
+.contact-icons {
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	height: 300px;
+}
+.contact-icons img {
+	width: 45%;
+	height: auto;
 }
 
 /* Layout til mobil */
@@ -205,7 +219,6 @@ p {
 	header {
 		display: none;
 	}
-	
 	.mobile {
 		display: block;
 	}
@@ -232,6 +245,10 @@ p {
   		background-color: white;
   		margin: 6px 0;
   		transition: 0.4s;
+	}
+	.top-nav .nav-tekst {
+		color: #ffbf00;
+		font-weight: 700;
 	}
 	
 	/* Home page */
