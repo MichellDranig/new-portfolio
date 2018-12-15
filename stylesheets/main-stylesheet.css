@@ -14,6 +14,12 @@ header {
 p {
 	line-height: 1.8;
 }
+li a {
+	color: #ffbf00;
+}
+li:hover a {
+	color: #715ab7;
+}
 
 /* Navigation */
 .mobile {
@@ -172,6 +178,20 @@ p {
 }
 .top-navigation .menu-udvikling {
 	color: #ffbf00;
+}
+.project-img img {
+	display: inline-block;
+	width: 100%; 
+	height: auto;
+}
+.project-app-img img {
+	display: inline-block;
+	width: 50%; 
+	height: auto;
+}
+.description {
+	margin-top: 5%;
+	border: 0px solid black;
 }
 /* Style til Kontakt/om */
 .menu-om {
