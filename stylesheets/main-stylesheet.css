@@ -112,6 +112,33 @@ li:hover a {
 	font-weight: 600;
 }
 
+/* Style til portfolio underside */
+.portfolio-img {
+	text-align: center;
+	margin-top: 2%;
+	margin-right: 4%;
+	width: 98%;
+}
+.portfolio-img img {
+	display: inline-block;
+	width: 100%;
+	height: auto;
+}
+.portfolio-right img {
+	display: inline-block;
+	width: 100%;
+	height: auto;
+}
+.portfolio-wire img {
+	display: inline-block;
+	width: 45%;
+	height: auto;
+}
+.moodboard img {
+	display: inline-block;
+	width: 100%;
+	height: auto;
+}
 /* Style til sweetbot underside */
 .sweet-img {
 	text-align: center;
