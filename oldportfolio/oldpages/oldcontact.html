@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact</title>
+<link href="../oldstyles/oldstyles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<ul class="top-navigation">	
+		<li>
+			<a class="top-menu" href="oldcv.html"><img src="../oldimages/resume-button.png" alt="contact button"/></a>
+		</li>
+		<li>
+			<a class="top-menu" href="#"><img src="../oldimages/contact-button.png" alt="contact button"/></a>
+		</li>
+			<li>
+			<a class="top-menu" href="oldphotos.html"><img src="../oldimages/photos-button.png" alt="photos button"/></a>
+		</li>
+		<li>
+			<a class="top-menu" href="oldprojects.html"><img src="../oldimages/projects-button.png" alt="projects-button"/></a>
+		</li>
+			<li>
+			<a class="top-menu" href="oldabout.html"><img src="../oldimages/about-button.png" alt="about button"/></a>
+		</li>
+		<li>
+			<a class="top-menu" href="../oldhome.html"><img src="../oldimages/home-button.png" alt="home button"/></a>
+		</li>
+	</ul>
+
+<h1 class="overskrift1">Contact me</h1>
+<div class="container">
+  <form action="../pages/action_page.php">
+    <label for="fname">Your full name</label>
+    	<input type="text" id="fname" name="fullname" placeholder="Full name..">
+    <label for="email">Your e-mail addresss</label>
+    <input type="text" id="email" name="mailaddress" placeholder="Type a valid e-mail address..">
+    <label for="country">Country</label>
+      <select id="country" name="country">
+      	<option value="australia">Australia</option>
+      	<option value="canada">Canada</option>
+      	<option value="denmark">Denmark</option>
+      	<option value="uk">UK</option>
+      	<option value="usa">USA</option>
+   	  </select>
+    <label for="subject">Subject</label>
+    	<textarea id="subject" name="subject" placeholder="Write something here.." style="height:200px"></textarea>
+      <input type="submit" value="Submit">
+  </form>
+</div>
+</body>
+</html>
