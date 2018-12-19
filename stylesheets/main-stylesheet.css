@@ -14,9 +14,6 @@ header {
 p {
 	line-height: 1.8;
 }
-li a {
-	color: #ffbf00;
-}
 li:hover a {
 	color: #715ab7;
 }
